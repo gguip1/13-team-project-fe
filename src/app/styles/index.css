@@ -1,0 +1,67 @@
+:root {
+  color-scheme: light;
+  font-family: "Space Grotesk", "IBM Plex Sans", "Segoe UI", sans-serif;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #101828;
+  background-color: #f8f3e8;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --bg-1: #f8f3e8;
+  --bg-2: #eef3ff;
+  --bg-3: #f1fff4;
+  --surface: rgba(255, 255, 255, 0.82);
+  --surface-strong: #ffffff;
+  --border: rgba(16, 24, 40, 0.12);
+  --shadow: rgba(15, 23, 42, 0.12);
+  --accent: #ff7a45;
+  --accent-strong: #d9480f;
+  --ink: #101828;
+  --muted: #475467;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      900px 500px at 15% -10%,
+      rgba(255, 122, 69, 0.2),
+      transparent 60%
+    ),
+    radial-gradient(
+      700px 500px at 85% 10%,
+      rgba(72, 158, 255, 0.18),
+      transparent 58%
+    ),
+    linear-gradient(135deg, var(--bg-1) 0%, var(--bg-2) 45%, var(--bg-3) 100%);
+  background-attachment: fixed;
+  color: var(--ink);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font: inherit;
+}
