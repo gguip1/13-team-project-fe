@@ -29,7 +29,7 @@ jobs:
         with:
           name: dist-${{ github.event.workflow_run.head_sha }}
           path: dist
-          # github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           run-id: ${{ github.event.workflow_run.id }}
 
       - name: Verify build output
